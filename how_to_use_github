@@ -1,0 +1,20 @@
+git clone https://github.com/lee3945/TIL.git
+cd TiL/
+git status
+vi README.md
+git add README.md
+git commit -> 이름짓기
+git config
+git config --global core.editor vim -> 6번문제해결
+git remote -v
+git push -u origin master -> 마스터 브랜치에 푸쉬
+git l -> git log 간단히
+git checkout -b 브랜치 이름
+mkdir development
+git branch
+touch dummy.php
+rm -rf development/
+vi code-complete-2.md
+git checkout master
+git branch -d 브랜치 이름 < git branch -D 브랜치 이름
+
