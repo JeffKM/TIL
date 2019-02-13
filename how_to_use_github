@@ -53,6 +53,9 @@ git checkout master
 git branch
 git pull --rebase upstream master
 git push origin master
+git merge 브랜치이름
+git branch -D 브랜치이름
+
 --------------------------------------------------------
 *Simcity 과정*
 
