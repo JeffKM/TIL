@@ -86,3 +86,11 @@ git branch -D 브랜치이름
 6.Github - 제목(이나 본문)에 이슈 번호 붙이기
 7.본문은 영문 기준 72자마다 줄 바꾸기
 8.본문은 어떻게보다 무엇을, 왜에 맞춰 작성하기
+---------------------------------------------------------------
+*git study
+
+1.merge: 실묶기 2.rebase: 실하나버리기 3.fast forward: 헤드만 옮기기
+2.git cherry-pick 브랜치이름 : commit 1개 rebase
+3.commit : project 전체의snapshot
+4.git pull --rebase: 다른사람들 한거 merge로 가져오고 자신껄 최신으로 놓음
+5.commit 하나하나가 의미나 기능을 갖도록 하라.
