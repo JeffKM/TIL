@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>004</title>
+</head>
+<body>
+<script>
+
+var arr = [];
+
+for(var i = 100; i < 1000; i++){
+	
+	for(var j = 100; j < 1000; j++){
+		
+		var num = i * j;
+		
+		if(num >= 10000 && num < 100000){
+			
+			var num5 = parseInt(num / 10000);
+			
+			var num4 = parseInt((num % 10000) / 1000);
+			
+			var num3 = parseInt((num % 1000) / 100);
+			
+			var num2 = parseInt((num % 100) / 10);
+			
+			var num1 = num % 10;
+			
+			if(num5 == num1 && num4 == num2){
+				
+					arr.push(num);
+			
+			}
+		}
+		if(num >= 100000 && num < 1000000){
+            
+            var num_6 = parseInt(num / 100000);
+			
+			var num_5 = parseInt((num % 100000) / 10000);
+			
+			var num_4 = parseInt((num % 10000) / 1000);
+			
+			var num_3 = parseInt((num % 1000) / 100);
+			
+			var num_2 = parseInt((num % 100) / 10);
+			
+			var num_1 = num % 10;
+			
+			if(num_6 == num_1 && num_5 == num_2 && num_4 == num_3){
+				
+						arr.push(num);
+						
+			}
+			
+		}
+	}
+
+}
+
+document.write(Math.max.apply(null, arr));
+
+
+
+
+</script>
+</body>
+</html>

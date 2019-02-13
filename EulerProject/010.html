@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>010</title>
+</head>
+<body>
+
+<script src="arrsum.js"></script>
+
+<script>
+
+var arr = [];
+
+for(var i = 2; i <= 100000000; i++){
+	
+	
+	arr.push(i);
+	
+	
+}
+
+var soarr = [2];
+
+for(var sonum = 3; sonum < 10000; sonum++){
+// for(var num = 3; num < 1000000000000; num++){
+	
+	var soarrlength = soarr.length;
+	var testnum = 1;
+	
+	for(var soi=0; soi < soarrlength; soi++){
+		
+		testnum = testnum * (sonum % soarr[soi]);
+		
+		}
+	
+	if(testnum != 0){
+		
+		soarr.push(sonum);
+		 
+	}
+	
+}
+l
+for(var j = 0; j < arr.length; j++){
+
+	for(var k = 0; k < soarr.length; k++){
+
+		if(arr[j] % soarr[k] == 0){
+
+			arr[j] = 0;
+
+		}
+	}
+}
+
+for(var l = 0; l < soarr.length; l++){
+	arr.push(soarr[l]);
+}
+
+document.write(sum(arr));
+
+/*var soarr = [2];
+
+for(var snum = 3; snum < 1000; snum++){
+    for(var num = 3; num < 1000000000000; num++){
+	
+	var soarrlength = soarr.length;
+	var testnum = 1;
+	
+	for(var k=0; k < soarrlength; k++){
+		
+		testnum = testnum * (snum % soarr[k]);
+		
+		}
+	
+	if(testnum != 0){
+		
+		soarr.push(snum);
+		 
+	}
+	
+}*/
+
+
+
+
+/*for(var j = 2; j < 2000000; j++){
+	
+	for(var k = 0; k < 2000000; k++){
+
+		if(arr[k] % j == 0){
+
+		}
+
+    }
+	
+}
+
+ arr[2]*/
+
+/*for(var j = 0; j < 2000000; j++){
+	for(var k = 1; k < 1000000; k++){
+
+		if(arr[j] % (2(k)+1) == 0){
+			arr[j] = null;
+		}
+	}
+}
+//arr.splice(arr.indexOf("even"), );*/
+
+/*for(var l=0; l < 1000000; l++){
+	
+	arr.splice(arr.indexOf("even",l),1);
+	
+}*/
+
+
+</script>
+</body>
+</html>

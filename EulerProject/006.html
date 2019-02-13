@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>006</title>
+</head>
+<body>
+<script src="arrsum.js"></script>
+<script>
+
+var arr1 = [];
+var arr2 = [];
+
+for(var i = 1; i <= 100; i++){
+	
+	arr1.push(i);
+	
+}
+
+var sumdouble = (sum(arr1))*(sum(arr1));
+
+for(var j = 1; j <= 100; j++){
+	
+	jdouble = j * j;
+	
+	arr2.push(jdouble);
+	
+}
+
+var doublessum = sum(arr2);
+
+document.write(sumdouble - doublessum);
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>005*</title>
+</head>
+<body>
+<script>
+
+document.write(" start ");
+var arr = [];
+var candidates = [11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+var j = 0;
+num_loop:
+for(var num = 1; num < 1000000000; num++){
+	var rs = 0;
+	
+candidates_loop: 
+	for (var i=0 ; i < candidates.length ; i++)  {
+		rs += num % (candidates[i]);
+	}
+	if (rs == 0) {
+		document.write(num);
+		document.write(" end ");
+		break num_loop;
+	}
+}
+
+
+
+</script>
+</body>
+</html>

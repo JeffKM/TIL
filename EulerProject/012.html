@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>012</title>
+</head>
+<body>
+
+
+<script>
+
+//var arr = [];
+
+var trinumarr = [];
+
+var answer = [];
+
+var sum = 0;
+
+for(var i = 1; i < 1000; i++){
+    
+    var sum = sum + i ;
+
+    trinumarr.push(sum);
+}
+
+var trinumarrlength = trinumarr.length;
+
+for(var i = 0; i < trinumarrlength; i += 1){
+    var trinum = trinumarr[i];
+}
+
+document.write(answer);
+
+var divisornum = function(num){
+    var divisors = [];
+    for(var i = 2; i <= num; i+=1){
+        if(num % i !== 0){
+            continue;
+        }
+        if(num % i === 0){
+            divisors.push(i);
+            while(num % i === 0){
+                
+            }
+        }
+    }
+}
+
+//document.writeln(trinumarr);
+
+</script>
+</body>
+</html>

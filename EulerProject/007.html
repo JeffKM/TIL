@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>007</title>
+</head>
+<body>
+<script>
+
+var arr = [2];
+
+for(var num = 3; num < 300000; num++){
+// for(var num = 3; num < 1000000000000; num++){
+	
+	var arrlength = arr.length;
+	var testnum = 1;
+	
+	for(var i=0; i < arrlength; i++){
+		
+		testnum = testnum * (num % arr[i]);
+		
+		}
+	
+	if(testnum != 0){
+		
+		arr.push(num);
+		 
+	}
+	
+}
+
+document.write(arr[10000]);
+
+</script>
+</body>
+</html>
