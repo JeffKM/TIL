@@ -114,3 +114,17 @@ git branch -D 브랜치이름
 5. commit 하나하나가 의미나 기능을 갖도록 하라.
 
 ~~~
+
+## git study2
+
+> 1. commit : snapshot
+2. commit hash -> *부모 commit hash, *project 전체의 hash, commit message, metadata(몇시,몇분,누가 만듦)
+3. 부모 commit 1개 :  그냥 commit, 2개 : merge commit
+4. 프로젝트 전체의 해쉬 값 만들기 : 하위 파일들의 해쉬값들을 모으고 이 과정을 반복하여 만듦
+5. untracked, tracked, staged : commit 들의 상태
+6. add하는 이유 -> add한 애들만 해쉬값 계산(바뀐애들만) -> staged가 되어 git DB에 파일로 저장(insert) -> git DB에 어떻게 들어가느냐 - key : hash, value :  파일명
+7. head : 눈, 내가 보고 있는 commit, 열어보면 내가 보고 있는 commit hash값 들어있음, 브랜치와 다른점 : 브랜치는 이름있는 헤드
+8. checkout : 브랜치 헤드를 옮김, reset : 이름 없는 헤드를 옮김 ex) git checkout master, git reset --hard c: master head $ no name head가 c를 보게됨
+9. merge된 뒤 헤드가 옮겨감, rebase : 구슬들을 다시 꿰어놀 떄 구슬들의 해쉬 값이 바뀌고 원래 구슬들은 존재하지만 잊혀짐
+10. git cherrypick 해쉬값들 : 1개씩만 rebase
+11. github vim에 이미지 넣기 : command + control + space
