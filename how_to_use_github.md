@@ -67,8 +67,6 @@ git branch -D 브랜치이름
 
 ## Simcity 과정
 
-~~~
-
 1. origin : 내가 포크 뜬 repository , upstream : 다른 사람들이 공유하는 repositary, local : 내컴퓨터
 2. 큰 과정 2가지 : 각각의 repo에는 master와 branch가 있는데 master들을 모두 최신화하는게 첫번째, 수정하고 다시 최신화 시키는게 두번째 일이다.
 3. 위에 origin과 upstream의 상태 확인을 git remote -v로 확인하자.
@@ -86,11 +84,11 @@ git branch -D 브랜치이름
 5-9. pull-request 요청하자. -> github origin repository에서 pull-request
 5-10. pull-request approve 해주면 끝, 위 과정을 반복한다.
 
-~~~
+
 
 ## git commit message 좋게 작성하는 방법
 
-~~~
+
 
 1. 제목과 본문을 한 줄 띄워 분리하기
 2. 제목은 영문 기준 50자 이내로
@@ -101,30 +99,30 @@ git branch -D 브랜치이름
 7. 본문은 영문 기준 72자마다 줄 바꾸기
 8. 본문은 어떻게보다 무엇을, 왜에 맞춰 작성하기
 
-~~~
+
 
 ## git study
 
-~~~
 
-1. merge: 실묶기 2.rebase: 실하나버리기 3.fast forward: 헤드만 옮기기
-2. git cherry-pick 브랜치이름 : commit 1개 rebase
-3. commit : project 전체의snapshot
-4. git pull --rebase: 다른사람들 한거 merge로 가져오고 자신껄 최신으로 놓음
-5. commit 하나하나가 의미나 기능을 갖도록 하라.
 
-~~~
+* merge: 실묶기 2.rebase: 실하나버리기 3.fast forward: 헤드만 옮기기
+* git cherry-pick 브랜치이름 : commit 1개 rebase
+* commit : project 전체의snapshot
+* git pull --rebase: 다른사람들 한거 merge로 가져오고 자신껄 최신으로 놓음
+* commit 하나하나가 의미나 기능을 갖도록 하라.
+
+
 
 ## git study2
 
-> 1. commit : snapshot
-2. commit hash -> *부모 commit hash, *project 전체의 hash, commit message, metadata(몇시,몇분,누가 만듦)
-3. 부모 commit 1개 :  그냥 commit, 2개 : merge commit
-4. 프로젝트 전체의 해쉬 값 만들기 : 하위 파일들의 해쉬값들을 모으고 이 과정을 반복하여 만듦
-5. untracked, tracked, staged : commit 들의 상태
-6. add하는 이유 -> add한 애들만 해쉬값 계산(바뀐애들만) -> staged가 되어 git DB에 파일로 저장(insert) -> git DB에 어떻게 들어가느냐 - key : hash, value :  파일명
-7. head : 눈, 내가 보고 있는 commit, 열어보면 내가 보고 있는 commit hash값 들어있음, 브랜치와 다른점 : 브랜치는 이름있는 헤드
-8. checkout : 브랜치 헤드를 옮김, reset : 이름 없는 헤드를 옮김 ex) git checkout master, git reset --hard c: master head $ no name head가 c를 보게됨
-9. merge된 뒤 헤드가 옮겨감, rebase : 구슬들을 다시 꿰어놀 떄 구슬들의 해쉬 값이 바뀌고 원래 구슬들은 존재하지만 잊혀짐
-10. git cherrypick 해쉬값들 : 1개씩만 rebase
-11. github vim에 이미지 넣기 : command + control + space
+* commit : snapshot
+* commit hash -> *부모 commit hash, *project 전체의 hash, commit message, metadata(몇시,몇분,누가 만듦)
+* 부모 commit 1개 :  그냥 commit, 2개 : merge commit
+* 프로젝트 전체의 해쉬 값 만들기 : 하위 파일들의 해쉬값들을 모으고 이 과정을 반복하여 만듦
+* untracked, tracked, staged : commit 들의 상태
+* add하는 이유 -> add한 애들만 해쉬값 계산(바뀐애들만) -> staged가 되어 git DB에 파일로 저장(insert) -> git DB에 어떻게 들어가느냐 - key : hash, value :  파일명
+* head : 눈, 내가 보고 있는 commit, 열어보면 내가 보고 있는 commit hash값 들어있음, 브랜치와 다른점 : 브랜치는 이름있는 헤드
+* checkout : 브랜치 헤드를 옮김, reset : 이름 없는 헤드를 옮김 ex) git checkout master, git reset --hard c: master head $ no name head가 c를 보게됨
+* merge된 뒤 헤드가 옮겨감, rebase : 구슬들을 다시 꿰어놀 떄 구슬들의 해쉬 값이 바뀌고 원래 구슬들은 존재하지만 잊혀짐
+* git cherrypick 해쉬값들 : 1개씩만 rebase
+* github vim에 이미지 넣기 : command + control + space
