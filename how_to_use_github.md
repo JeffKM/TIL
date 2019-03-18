@@ -126,3 +126,10 @@ git branch -D 브랜치이름
 * merge된 뒤 헤드가 옮겨감, rebase : 구슬들을 다시 꿰어놀 떄 구슬들의 해쉬 값이 바뀌고 원래 구슬들은 존재하지만 잊혀짐
 * git cherrypick 해쉬값들 : 1개씩만 rebase
 * github vim에 이미지 넣기 : command + control + space
+
+## git 최신화하기
+
+1. git ls -al 로 현재 위치에 .git 이 있는지 확인
+2. git fetch
+3. git branch
+4. git pull
