@@ -8,6 +8,10 @@
 
 3. 2차 미션 피드백 반영 및 수정한 후, 한영 번역기 customFunction 만들고, 마지막으로 pdf 파일을 만듭니다.
 
+4. 2차 미션 피드백을 다시 수정한 뒤, customfunction에서 한글에서 영어로 번역되지 않는 문제를 수정하고, pdf 파일이 생성되지 않는 문제를 해결합니다.
+
+5. 코드 리펙토링을 한 뒤 4차 미션 피드백을 수정하고, 데이터 형식을 json 형식으로 수정하고 로우 수를 반응형으로 늘리게 합니다.
+
 ## Grammers
 
 * ___SpreadsheetApp.openByID(ID)___
@@ -53,9 +57,9 @@
 ## Useful Codes
 
 * 파일을 폴더로 옮깁니다.
-    function moveFiles(sourceFileId, targetFolderId) {
-      var file = DriveApp.getFileById(sourceFileId);
-      file.getParents().next().removeFile(file);
-      DriveApp.getFolderById(targetFolderId).addFile(file);
-    }
+   +     function moveFiles(sourceFileId, targetFolderId) {
+           var file = DriveApp.getFileById(sourceFileId);
+           file.getParents().next().removeFile(file);
+           DriveApp.getFolderById(targetFolderId).addFile(file);
+         }
 
